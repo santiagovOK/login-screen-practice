@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="login">
+        <h1 class="login__title">Welcome</h1>
+        <form class="login__form">
+            <fieldset class="login__input-group login__input-group--success">
+                <legend class="login__legend">Login Credentials</legend>
+                <label for="email" class="login__label">Email</label>
+                <input type="text" class="login__input" name="email" id="email" aria-describedby="emailHelp">
+                <span class="login__msg" id="emailHelp"> Valid email</span>
+            </fieldset>
+
+            <fieldset class="login__input-group login__input-group--error">
+                <label for="password" class="login__label">Password</label>
+                <input type="text" class="login__input" name="password" id="password" aria-describedby="passwordHelp">
+                <span class="login__msg" id="passwordHelp">Incorrect password</span>
+            </fieldset>
+
+            <button type="submit" class="login__button">Login</button>
+        </form>
+    </main>
+    
+</body>
+</html>

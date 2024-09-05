@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: inherit; 
+}
+
+
+:root {
+    
+    --primary-light-hsl: 200, 100%, 91%;
+    --primary-hsl: 200, 100%, 50%;
+    --primary-dark-hsl: 200, 100%, 6%;
+    --success-hsl: 100, 60%, 50%;
+    --error-hsl: 0, 60%, 50%;
+}
+
+html {
+    font-size: 62.5%; 
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth; 
+}
+
+.login {
+    background-image: url(/assets/background-image.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.login__title{
+
+    margin: 20px;
+
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    --color: hsl(var(--primary-dark-hsl), .7);
+    background-color: var(--color);
+    box-shadow: 0 0 15px 0 var(--color);
+}
+
+.login__input-group--success {
+    display: flex;
+    flex-direction: column; 
+    margin: 10px;
+}
+
+.login__legend {
+    text-align: center;
+}
+
+.login__input-group--error {
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+
+}
+
+
+
