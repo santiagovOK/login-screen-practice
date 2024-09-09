@@ -39,37 +39,109 @@ html {
 
 }
 
-.login__title{
-
-    margin: 20px;
-
-}
-
 .login__form{
     display: flex;
     flex-direction: column;
-    padding: 40px 30px;
     --color: hsl(var(--primary-dark-hsl), .7);
     background-color: var(--color);
     box-shadow: 0 0 15px 0 var(--color);
+    padding: 40px 30px;
+    width: 80%;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 20px;
 }
 
-.login__input-group--success {
+.login__input-group {
     display: flex;
     flex-direction: column; 
     margin: 10px;
+    border: none;
 }
 
 .login__legend {
+    color: white;
     text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 60px;
 }
 
-.login__input-group--error {
-    display: flex;
-    flex-direction: column;
-    margin: 10px; 
-
+.login__label {
+    padding: 8px;
+    color: white;
+    font-size: 1.4rem;
 }
 
+.login__input {
+    margin: 10px;
+    padding: 8px;
+    font-size: 1.6;
+    background-color: hsl(var(--primary-light-hsl), .3);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: lighter;
+}
 
+.login__input:focus {
+    box-shadow: 0 0 0 1px hsl(var(--primary-hsl));
+}
 
+.login__input--success {
+    margin: 10px;
+    padding: 8px;
+    font-size: 1.6;
+    background-color: hsl(var(--primary-light-hsl), .3);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: lighter;
+    box-shadow: 0 0 0 1px hsl(var(--success-hsl));
+}
+
+.login__input--error {
+    margin: 10px;
+    padding: 8px;
+    font-size: 1.6;
+    background-color: hsl(var(--primary-light-hsl), .3);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: lighter;
+    box-shadow: 0 0 0 1px hsl(var(--error-hsl));
+}
+
+.login__msg {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.login__msg--success {
+    padding: 8px;
+    margin-bottom: 10px;
+    color: hsl(var(--success-hsl));
+}
+
+.login__msg--error {
+    padding: 8px;
+    margin-bottom: 10px;
+    color: hsl(var(--error-hsl));
+}
+
+.login__button {
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    background-color: hsl(var(--primary-hsl), .25);
+    border: 1px solid hsl(var(--primary-hsl));
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.login__button:hover,
+.login-button:focus{
+    background-color: hsl(var(--primary-hsl), .4);
+}
